@@ -1,0 +1,41 @@
+/* Estilos básicos para el portafolio */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+}
+
+header img {
+    object-fit: cover;
+}
+
+/* Efectos hover sutiles para las cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Estilos extra para badges de tecnologías */
+.badge {
+    font-size: 0.85em;
+    padding: 0.5em 0.7em;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+/* Ajuste de imágenes de proyectos */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+h3 {
+    text-align: center;
+}
