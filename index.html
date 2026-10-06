@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-light">
+<body class="bg-body-tertiary">
 
     <!-- Header / Hero Section -->
     <header class="bg-dark text-white text-center py-5">
@@ -24,7 +24,8 @@
                 <a href="mailto:mmlf93iqm@gmail.com" class="btn btn-outline-light me-2">Email</a>
                 <a href="https://github.com/FerIqm1993" target="_blank" class="btn btn-outline-light me-2">GitHub</a>
                 <a href="https://linkedin.com/in/fernando-martinez-ds" target="_blank"
-                    class="btn btn-outline-light">LinkedIn</a>
+                    class="btn btn-outline-light me-2">LinkedIn</a>
+                <a href="https://github.com/FerIqm1993/Proyecto-Portafolio-Personal" target="_blank" class="btn btn-warning">Repo de este Portafolio</a>
             </div>
         </div>
     </header>
@@ -48,7 +49,7 @@
     </section>
 
     <!-- Tecnologías -->
-    <section id="seccionTecnologias" class="py-5 bg-white">
+    <section id="seccionTecnologias" class="py-5 bg-body">
         <div class="container">
             <h2 class="mb-4 text-center">Habilidades Técnicas</h2>
             <div class="row text-center">
@@ -81,92 +82,11 @@
         </div>
     </section>
 
-    <!-- Proyectos Destacados -->
-    <section id="seccionProyectos" class="py-5">
-        <div class="container">
-            <h2 class="mb-5 text-center">Proyectos Destacados</h2>
-
-            <h3 class="mb-4 border-bottom pb-2">Área de Datos e Inteligencia Artificial</h3>
-            <div class="row mb-5">
-                <!-- Proyecto 1: IA -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm border-primary">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Agente de IA para Documentación de Inspecciones</h5>
-                            <h6 class="card-subtitle mb-2 text-white-50">Alura (Jun. 2026)</h6>
-                            <p class="card-text">
-                                Desarrollé un agente utilizando LangChain y arquitectura RAG para procesar y recuperar
-                                información técnica de manera eficiente.
-                            </p>
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-secondary">LangChain / RAG</span>
-                        </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <a href="https://github.com/FerIqm1993" target="_blank"
-                                class="btn btn-sm btn-outline-dark">Ver en GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto 2: Predicción -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm border-primary">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Modelo Predictivo de Abandono de Clientes</h5>
-                            <h6 class="card-subtitle mb-2 text-white-50">The Univ. of Tokyo – Matsuo-Iwasawa Lab. (Mar.
-                                2026)</h6>
-                            <p class="card-text">
-                                Desarrollé un flujo de Machine Learning que incluye EDA sobre 132 variables y la
-                                implementación de ensambles de modelos avanzados.
-                            </p>
-                            <span class="badge bg-success">LightGBM</span>
-                            <span class="badge bg-danger">XGBoost / CatBoost</span>
-                        </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <a href="https://github.com/FerIqm1993" target="_blank"
-                                class="btn btn-sm btn-outline-dark">Ver en GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="mb-4 border-bottom pb-2">Área Java Full Stack</h3>
-            <div class="row">
-                <!-- Proyecto Java Core -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm border-success">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Ejercicios de Lógica y Algoritmia en Java</h5>
-                            <h6 class="card-subtitle mb-2 text-white-50">Bootcamp Generation</h6>
-                            <p class="card-text">
-                                Implementación de un Sistema de Recomendación de Películas, Sistemas Bancarios y Control
-                                de Inventarios utilizando Java Core, POO y estructuras de datos.
-                            </p>
-                            <span class="badge bg-success">Java Core</span>
-                            <span class="badge bg-secondary">POO</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Proyecto Integrador -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm border-success">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Proyecto Integrador Full Stack</h5>
-                            <h6 class="card-subtitle mb-2 text-white-50">Bootcamp Generation</h6>
-                            <p class="card-text">
-                                Desarrollo de una solución integral conectando una API Backend robusta con una interfaz
-                                web dinámica construida en HTML, CSS, Bootstrap y JS/React.
-                            </p>
-                            <span class="badge bg-dark">Backend</span>
-                            <span class="badge bg-warning text-dark">Frontend Básico</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Contenedor para cargar la plantilla de proyectos dinámicamente -->
+    <div id="seccionProyectosWrapper"></div>
 
     <!-- Experiencia y Educación -->
-    <section id="seccionExperiencia" class="py-5 bg-white">
+    <section id="seccionExperiencia" class="py-5 bg-body">
         <div class="container">
             <div class="row">
                 <!-- Experiencia Laboral -->
@@ -247,6 +167,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script src="js/proyectos.js"></script>
     <script>
         document.getElementById("anioActual").textContent = new Date().getFullYear();
     </script>
